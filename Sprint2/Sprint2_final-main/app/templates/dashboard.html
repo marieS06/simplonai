@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}accueil{% endblock %}
+{% block section %}
+			
+            <section>
+                <div style class='truc'>
+                    <div style class='machin'>
+                        <img src="{{url_for('static', filename='img/image.png')}}"  width = "100%" height = "650"> 
+                    </div>
+                    <div style class='bidule'>
+                        <p class="din">Nearbai</p> 
+                        <div>
+                       <p class="dingue">Éstimer votre bien gratuitement</p>
+                        </div>
+                     </div> 
+                 </div>
+
+	
+		<img src="{{url_for('static', filename='img/invest-in-startups.png')}}">
+	    <img src="{{url_for('static', filename='img/dashboard.png')}}" alt="dashboard" />
+	    <img src="{{url_for('static', filename='img/dashboard2.png')}}" alt="dashboard" />
+	
+                </section>
+            
+{% endblock %}	  
+
+

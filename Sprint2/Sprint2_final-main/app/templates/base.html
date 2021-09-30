@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Naer bay</title>
+	<link rel="stylesheet" type="text/css" href="/static/style.css" />
+</head>
+
+
+<body>
+	<div id="case">
+		<header>
+			<nav id=navigation>
+                <img src="{{url_for('static', filename='img/pasted.jpg')}}"  width = "200" height = "200" alt="description de l'image" > 
+				<a href="{{ url_for('dashboard')}}">About</a><br>	
+				<!--<a href="{{url_for('predict')}}">Visualisation</a><br>-->	
+	   		    <a href="{{ url_for('formulaire_predict')}}">Prediction</a><br>
+			</nav>
+			
+		</header>
+			<section>
+                {% block section %}
+                {% endblock  %}
+			</section>
+	  
+		<footer> 
+			<div class='pied'>
+			powerd by : goupe 2 :  Yoan, Thuy, Marie et Brahiman : {{ date }}
+			</div>
+		</footer> 
+	</div>
+</html>

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Resultat{% endblock %}
+{% block section %}
+
+<section>
+	<form class="resultat">
+		<fieldset>
+		 <legend>Résultat : </legend>
+		 <label>longitude {{ longitude }}</label><br>
+		 <label>latitude {{ latitude }}<label><br>
+		 <label>hma {{ hma }}</label><br>
+		 <label>rooms {{ rooms }}<label><br>
+		 <label>bedrooms {{ bedrooms }}</label><br>
+		 <label>population {{ population }} <label><br>
+		 <label>households {{ households }} </label><br>
+		 <label>ocean_prox {{ ocean_prox }} <label><br>
+		 <label>rooms_house {{ rooms_house }}</label><br>
+		 <label>bedrooms_rooms {{ bedrooms_rooms }} <label><br>
+		 <label>bedrooms_house {{ bedrooms_house }}</label><br>
+		 <label>pop_house {{ pop_house }} <label><br>
+		</fieldset>
+		<h3>Le prix médian estimé est de : {{ predict }} $</h3S>
+	   </form>
+	   
+	   
+	
+	   
+	
+
+		
+	
+</section>
+
+{% endblock %}
+

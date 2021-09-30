@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}Formulaire{% endblock %}
+{% block section %}
+
+	   
+	<section>
+	<div class="formulaire">
+		<form action="{{url_for('predict')}}" method="post"> 
+		   <div>
+		        <label for="longitude">Longitude : </label>
+		        <input type="number" id="longitude" name="longitude">
+				</div>
+				<div>
+		        <br><label for="latitude">Latitude : </label>
+		        <input type="number" id="latitude" name="latitude">
+				</div>
+				<div>
+		        <label for="hma">Housing median age : </label>
+		        <input type="number" id="hma" name="hma">
+				</div>
+				<div>
+		        <label for="rooms">Total rooms : </label>
+		        <input type="number" id="rooms" name="rooms">
+				</div>
+				<div>
+		        <label for="bedrooms">Bedrooms : </label>
+		        <input type="number" id="bedrooms" name="bedrooms">
+				</div>
+				<div>
+		        <label for="population">Population : </label>
+		        <input type="number" id="population" name="population">
+				</div>
+				<div>
+		        <label for="households">Households : </label>
+		        <input type="number" id="households" name="households">
+				</div>
+				<div>
+		        <label for="income">Median income : </label>
+		        <input type="number" id="income" name="income">
+				</div>
+				<div>
+		        <label for="ocean_prox">Ocean proximity : </label>
+		        <input type="number" id="ocean_prox" name="ocean_prox">
+				</div>
+		   
+
+
+		    <br><input type="submit" value="Envoyer"  action="{{url_for('predict')}}" method="get"/>
+		</form>
+	</div>
+	</section>
+{% endblock %}
+	
+
+
